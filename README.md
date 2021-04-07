@@ -48,6 +48,6 @@ Looking at applications like quizlet and duolingo, we see that they divide conte
 
 ## Bibliography
 
-1.Review of the Language Learning App "Duolingo" – Specialist Language Courses (2016). Available at: https://specialistlanguagecourses.com/review-language-learning-app-duolingo/  (Accessed: 7 April 2021).
++ Review of the Language Learning App "Duolingo" – Specialist Language Courses (2016). Available at: https://specialistlanguagecourses.com/review-language-learning-app-duolingo/  (Accessed: 7 April 2021).
 
   
