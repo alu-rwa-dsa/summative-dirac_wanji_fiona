@@ -14,9 +14,9 @@ ALU Career Readiness App
 
 ## Team Members
 
-  Wanjiru Wang'ondu
-  Dirac Murairi
-  Fiona Ng'ang'a
+  -Wanjiru Wang'ondu
+  -Dirac Murairi
+  -Fiona Ng'ang'a
 
 ## Data Structures and Algorithms used
 
