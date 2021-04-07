@@ -2,7 +2,7 @@
 
 * [Project Title](#project-title)
 * [Team Members](#team-members)
-* [Data Structures & Algorithms Used](#data-structures-and-algorithms used)
+* [Data Structures and Algorithms Used](#data-structures-and-algorithms-used)
 * [Project Description](#project-description)
 * [Motivation behind the Project](#motivation)
 * [Bibliography/References](#bibliography)
