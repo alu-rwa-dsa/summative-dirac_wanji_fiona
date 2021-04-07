@@ -11,7 +11,7 @@ You can clone the project from our repository and ensure that your coding enviro
 
 ## Code of Conduct ##
 
-### Our objective ###
+### Our Objectives ###
 We want to emphasise the following about our project: 
 - It is aimed to help organisations find an easy way to help students learn a  certain topic or subject
 - Its purpose is to help everyone, so it is free
