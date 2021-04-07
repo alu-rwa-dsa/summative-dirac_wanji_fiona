@@ -14,9 +14,9 @@ ALU Career Readiness App
 
 ## Team Members
 
-  >Wanjiru Wang'ondu
-  >Dirac Murairi
-  >Fiona Ng'ang'a
+  + Wanjiru Wang'ondu
+  + Dirac Murairi
+  + Fiona Ng'ang'a
 ## Data Structures and Algorithms used
 
  - Binary search - we’re using this to enable a search feature in our app for different users and questions later on with the finished app.
@@ -27,10 +27,10 @@ ALU Career Readiness App
 Our project is a quiz application, similar to duolingo and quizlet in that user's answer questions on different topics. In our case, all our topics are career development related as it is a project inspired by our own career development experiences and journeys.
 
 The application has these features: 
-  >A sign up and login feature: this is for users to sign up and be able to have their progress and scores tracked
-  >A database: this stores the user's scores and details
-  >A ranking and sorting system: this is to help administrators (like career development personnel and interns) check different users progress and scores, in order to see how    well their doing and whether they need any help. They can also use this to determine what score corresponds to what career readiness stamp
-  >A basic GUI for users to interact with when they answer questions, which displays the questions and gives their score for the particular quiz they are doing 
+  + A sign up and login feature: this is for users to sign up and be able to have their progress and scores tracked
+  + A database: this stores the user's scores and details
+  + A ranking and sorting system: this is to help administrators (like career development personnel and interns) check different users progress and scores, in order to see   how well their doing and whether they need any help. They can also use this to determine what score corresponds to what career readiness stamp
+  + A basic GUI for users to interact with when they answer questions, which displays the questions and gives their score for the particular quiz they are doing 
 
 The application has different question sets, with different topics and content. As career development content is generally the same for different years, we decided to make all the types of content available for all students, so the questions and students are not divided into years.
 
