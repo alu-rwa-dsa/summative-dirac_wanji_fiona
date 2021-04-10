@@ -1,5 +1,20 @@
+import requests
+
 # Sorting using quicksort
-listC = [5, 3, 2, 77, 56]  # expected list: 2, 3, 5, 56, 77
+# listC = [5, 3, 2, 77, 56]  # expected list: 2, 3, 5, 56, 77
+
+url = "https://api-career-dev-quizz.herokuapp.com/users/"
+
+response = requests.get(url)
+data = response.json()
+
+dict_data = data[0]  # this gives us just the dictionary stored in the list structure from the db
+scores = data[0].get('score')
+scores_as_strings = str(scores)
+
+user_scores = []
+for score in scores_as_strings:
+    user_scores.append(score)  # add the scores from the database
 
 
 def quick_sorting_scores(listZ):
@@ -27,8 +42,9 @@ def quick_sorting_scores(listZ):
         return listZ
 
 
-sortedListC = quick_sorting_scores(listC)
-print("Sorted list: " + str(sortedListC))
+# sortedListC = quick_sorting_scores(listC)
+# print("Sorted list: " + str(sortedListC))
+
 
 # Ranking
 
@@ -38,9 +54,9 @@ def ranking_scores(listZ):
     i = user_score_input
     if i in listZ:
         item_index = listZ.index(i)
-        print(item_index)  # checking it works
+        # print(item_index)  # checking it works
         rank = item_index + 1
         print("You are in the number " + str(rank) + " place!")
 
 
-ranking_scores(sortedListC)
+# ranking_scores(sortedListC)
