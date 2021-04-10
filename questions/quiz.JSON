@@ -1,0 +1,18 @@
+
+{
+    "ques": [
+        "1. It's important to list out your email address in a professional way on a resume.\nWhich is the best email here assuming your name is 'Jane Smith'",
+        "2. You have so many experiences and want to impress your employer so you can get the job.\nWhich of these 2 should you pick?",
+        "3. When adding your employment history what's the best date structure to use?",
+        "4. Is it important to update your resume with keywords from your desired job description?",
+        "5. You should apply for all job positions you find irregardless of your resume and qualifications, it's a better strategy.\nDo you agree?"
+    ],
+    "options": [
+        ["janesmith@gmail.com","thatgirljay@gmail.com"],
+        ["Stick to 1 page and include and include the most relevant experiences","Include all your experiences and lay them out in as many pages as you need"],
+        ["2017-2018: Program Manager","June 2017-December 2018:Program Manager at Best Company"],
+        ["Yes","No"],
+        ["True","False"]
+    ],
+    "ans": [1,1,2,1,2]
+}
