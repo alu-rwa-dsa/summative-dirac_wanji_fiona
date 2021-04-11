@@ -5,6 +5,27 @@ from users.administrator_class import Administrator
 from users.student_class import Student
 
 
+# we create a student menu that is displayed after logging in
+def student_menu():
+    print("=" * 100)
+    print("Welcome! What would you like to do today?")
+    print("Press 1: To Play our new Resume Prep Quiz")
+    print("Press 2: To See your Score")
+    print("Press 3: Logout")
+
+# we create an administrator menu that is displayed after logging in
+
+
+def admin_menu():
+    print("=" * 100)
+    print("Welcome! What would you like to do today?")
+    print("Press 4: To Add a new Question")
+    print("Press 5: To Add a new Administrator")
+    print("Press 6: To Remove a User")
+    print("Press 7: To Search for a particular user to see their progress")
+    print("Press 8: Logout")
+
+
 def login():
     """login"""
     """find user in the database"""
@@ -25,9 +46,11 @@ def login():
         user.pop("__v")
         user["password"] = password
         print(user)
-        if user["userClassification"] == "student":
+        if user["userClassification"] == "student" or user["userClassification"] == "Student":
+            student_menu()
             return Student(**user)
         else:
+            admin_menu()
             return Administrator(**user)
     elif request.status_code == 500:
         return 0
