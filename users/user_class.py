@@ -1,5 +1,5 @@
-from users.search.database import get_all_questions
-from users.search import search_one_user
+# from users.search.database import get_all_questions
+# from users.search import search_one_user
 
 
 class User:

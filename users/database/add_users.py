@@ -1,26 +1,24 @@
 import requests
 import json
 
+def add_new_user(user):
 
-def add_new_users(lst_users):
     """
-    add_new_users
+    add_new_user
     =============
     return -1 when failed.
     """
 
     url = "https://api-career-dev-quizz.herokuapp.com/users"
+    
 
-    if lst_users is None:
+    if user is None:
         return -1
-    elif type(lst_users) is not "list":
-        raise TypeError
     else:
-        for user in lst_users:
+        request = requests.post(url = url, data=user)
 
-            request = requests.post(url=url, data=user)
-
-            if request.status_code == 200:
-                print("added new user")
-            else:
-                return -1
+        if request.status_code == 200:
+            print("added new user")
+        else:
+            print(" did not add a new user ")
+            return -1
