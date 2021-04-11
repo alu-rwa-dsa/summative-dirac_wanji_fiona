@@ -3,7 +3,7 @@ from login.login_module import login
 from users.user_class import User
 from users.student_class import Student
 from users.administrator_class import Administrator
-from questions.database.get_all_questions import get_all_questions
+from questions.questions_answers import *
 from users.search.search_one_user import get_the_user
 import requests
 import json
@@ -31,7 +31,8 @@ while True:
         login()
         option = input("What number do you choose?").lower()
         if option == "1" or choice == "one":
-            get_all_questions()
+            Quiz()
+            root.mainloop()
         elif option == "2" or choice == "two":
             print("Your score is: ")
         elif option == "4" or choice == "four":
