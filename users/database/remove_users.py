@@ -1,27 +1,25 @@
 import requests
 import json
 
-
-def remove_users(lst_users):
+def remove_user(user):
 
     url = "https://api-career-dev-quizz.herokuapp.com/users"
+    # url = "http://localhost:3000/users"
     
     """
-    remove_users
-    =================
+    remove_user
+    ===========
     return -1 when failed.
     """
 
-    if lst_users is None:
+    if user is None:
         return -1
-    elif type(lst_users) is not "list":
-        raise TypeError
     else:
-        for user in lst_users:
 
-            request = requests.delete(url = url, data=user)
+        request = requests.delete(url = url, data=user)
 
-            if request.status_code == 200:
-                print("removed a new user")
-            else:
-                return -1
+        if request.status_code == 200:
+            print("removed a new user")
+        else:
+            print("didn't remove the user")
+            return -1
