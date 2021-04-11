@@ -24,7 +24,7 @@ def sign_up():
         lastName = input("What is your Last Name? ")
         email = input("What is your ALU email? ")
         password = input("What will your password be to access our App?")
-        userClassification = "Student"
+        userClassification = "student"
         rank = "None"
         numberOfQuestionsAnswered = 0
         score = 0
@@ -49,7 +49,7 @@ def sign_up():
         lastName = input("What is your Last Name? ")
         email = input("What is your ALU email? ")
         password = input("What will your password be to access our App?")
-        userClassification = "Administrator"
+        userClassification = "administrator"
         dict = {"firstName": firstName, "lastName": lastName, "email": email, "password": password,
                 "userClassification": userClassification}
         url = "https://api-career-dev-quizz.herokuapp.com/users"
