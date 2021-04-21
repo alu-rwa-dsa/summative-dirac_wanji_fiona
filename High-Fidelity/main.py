@@ -31,8 +31,8 @@ while True:
         user = login()
         option = input("What number do you choose?").lower()
         if option == "1" or choice == "one":
-            Quiz()
-            root.mainloop()
+            newQuiz = Quiz()
+            newQuiz.root.mainloop()
         elif option == "2" or choice == "two":
             print("Your score is: ")
         elif option == "4" or choice == "four":
