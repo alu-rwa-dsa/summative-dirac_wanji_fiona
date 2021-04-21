@@ -1,0 +1,18 @@
+
+{
+    "ques": [
+        "1. How should you answer soft skills related questions?",
+        "2. When asked 'How do you prioritize tasks with multiple deadlines?'\nYou should:",
+        "3. When asked 'What do you look for in an employer company?'\nYou should:",
+        "4. When asked 'Explain your biggest failures and what you learned?'\nYou should:",
+        "5. When asked 'How do you handle disagreements  when you think you're right?'\nYou should:"
+    ],
+    "options": [
+        ["Mention all the skills you have","Use the (Situation,Task,Action,Result) method for relevant skills to the role"],
+        ["Mention tools you use to organize projects and how they help you prioritize","Mention that you do different tasks depending on your mood"],
+        ["Mention a good salary","Mention what's important to you and how it matches the company's core values"],
+        ["Mention an experience that shows your ability to learn on the job despite facing challenges","Say you don't have failures because you're very diligent"],
+        ["Mention you push till everyone knows you're right","Give an instance of how you had such a conflict and how you solved it"]
+    ],
+    "ans": [2,1,2,1,2]
+}
