@@ -90,6 +90,7 @@ class Quiz:
         wrong = "No. of wrong answers: " + str(wc)
         mb.showinfo("Result", "\n".join([result, correct, wrong]))
 
+if main == "__main__":
+    quiz = Quiz()
+    root.mainloop()
 
-quiz = Quiz()
-root.mainloop()
