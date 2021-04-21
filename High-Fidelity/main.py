@@ -20,43 +20,46 @@ def main_menu():
     print("Press 1: To Sign Up if you are a new user")
     print("Press 2: To Login if you're an existing user")
     print("Press 3: Exit")
+    start_choice = input("Are you ready? Type y").lower()
 
-
-while True:
-    main_menu()
-    choice = input("What number do you choose?").lower()
-    if choice == "1" or choice == "one":
-        user = sign_up()
-    elif choice == "2" or choice == "two":
-        user = login()
-        option = input("What number do you choose?").lower()
-        if option == "1" or choice == "one":
-            Quiz()
-            root.mainloop()
-        elif option == "2" or choice == "two":
-            print("Your score is: ")
-        elif option == "4" or choice == "four":
-            dict1 = {}
-            user.add_question(dict1)
-        elif option == "5" or choice == "five":
-            dict2 = {}
-            user.add_new_administrator(dict2)
-        elif option == "6" or choice == "six":
-            dict3 = {}
-            user.remove_user(dict3)
-        elif option == "7" or choice == "seven":
-            get_the_user()
-        elif option == "8" or choice == "eight" or choice == "3" or choice == "three":
-            print("Thank you!")
+    while start_choice == "y".lower():
+        # main_menu()
+        choice = input("What number do you choose?").lower()
+        if choice == "1" or choice == "one":
+            user = sign_up()
+        elif choice == "2" or choice == "two":
+            user = login()
+            option = input("What number do you choose?").lower()
+            if option == "1" or choice == "one":
+                Quiz()
+                root.mainloop()
+            elif option == "2" or choice == "two":
+                print("Your score is: ")
+            elif option == "4" or choice == "four":
+                dict1 = {}
+                user.add_question(dict1)
+            elif option == "5" or choice == "five":
+                dict2 = {}
+                user.add_new_administrator(dict2)
+            elif option == "6" or choice == "six":
+                dict3 = {}
+                user.remove_user(dict3)
+            elif option == "7" or choice == "seven":
+                get_the_user()
+            elif option == "8" or choice == "eight" or choice == "3" or choice == "three":
+                print("Thank you!")
+                break
+        elif choice == "3" or choice == "three":
+            print("Thank you !")
+        ask = input("Would you like to choose again? Choose 'yes' if you would like to and 'no' if not: ").lower()
+        if ask == "yes":
+            continue
+        else:
+            print("See you next time")
             break
-    elif choice == "3" or choice == "three":
-        print("Thank you !")
-    ask = input("Would you like to choose again? Choose 'yes' if you would like to and 'no' if not: ").lower()
-    if ask == "yes":
-        continue
-    else:
-        print("See you next time")
-        break
+
+
+main_menu()
 print("\n")
 print("Thanks for checking in and working on your career readiness!")
 print("=" * 100)
