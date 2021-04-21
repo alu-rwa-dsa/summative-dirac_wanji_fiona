@@ -22,6 +22,7 @@ def main_menu():
     print("Press 3: Exit")
     start_choice = input("Are you ready? Type y").lower()
 
+<<<<<<< HEAD
     while start_choice == "y".lower():
         # main_menu()
         choice = input("What number do you choose?").lower()
@@ -56,6 +57,35 @@ def main_menu():
             continue
         else:
             print("See you next time")
+=======
+
+while True:
+    main_menu()
+    choice = input("What number do you choose?").lower()
+    if choice == "1" or choice == "one":
+        user = sign_up()
+    elif choice == "2" or choice == "two":
+        user = login()
+        option = input("What number do you choose?").lower()
+        if option == "1" or choice == "one":
+            newQuiz = Quiz()
+            newQuiz.root.mainloop()
+        elif option == "2" or choice == "two":
+            print("Your score is: ")
+        elif option == "4" or choice == "four":
+            dict1 = {}
+            user.add_question(dict1)
+        elif option == "5" or choice == "five":
+            dict2 = {}
+            user.add_new_administrator(dict2)
+        elif option == "6" or choice == "six":
+            dict3 = {}
+            user.remove_user(dict3)
+        elif option == "7" or choice == "seven":
+            get_the_user()
+        elif option == "8" or choice == "eight" or choice == "3" or choice == "three":
+            print("Thank you!")
+>>>>>>> 55a664851f2e1a0c5274ffe2bfd4c710cd6fd54e
             break
 
 
