@@ -45,6 +45,21 @@ A lot of students complain about the amount of career development content and ho
 
 Looking at applications like quizlet and duolingo, we see that they divide content into different, small sections and allow students to study the larger topic section by section. That is what we wanted our application to do for ALU students.
 
+## Correctness of Algorithms and Time/Space complexity Analysis
+
+### 1. The Login function
+
+![login-image](https://user-images.githubusercontent.com/70945471/116002638-ff62bc80-a5fa-11eb-9753-02dc014b1da9.png)
+
+The login function interacts with our student and administration database, as it let’s people login and interact with the application. 
+
+This function works with an if condition, which checks for a status code of 200, which means the request has been received and understood, and if it receives this code, it goes ahead and gets the user information. Then it checks whether the password that was input is the same as the user password and whether the user is actually classified as a student. If the user meets this criteria, then the code directs them to the student menu, where they can do various things, like take quizzes and view their scores. This works in all cases because each user has a specific password, so if it's correct then we are sure the right user is logged in.
+
+If the password is correct, but the user isn’t classified as a student, they’re taken to the admin menu, and this works in all situations, because there are only two classifications: students and admin.
+
+Lastly, the elif and else condition check for other status codes, the elif for code 500, which is a generic error code and the else for any other code, and the numbers they return would let us know there’s an error and we should check it out.
+
+
 
 ## Bibliography
 
