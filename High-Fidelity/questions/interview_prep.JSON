@@ -1,0 +1,18 @@
+
+{
+    "ques": [
+        "1. When asked by an interviewer what your weaknesses are,\nYou should:",
+        "2. When asked 'Why should we hire you?'.\nYou should:",
+        "3. When asked 'Tell me about yourself',\nYou should:",
+        "4. When asked 'Why do you want to work for this company',\nYou should:",
+        "5. When asked 'What can yu bring to the company'\nYou should:"
+    ],
+    "options": [
+        ["Say that you have none;you're the perfect candidate","Concentrate on professional traits and show effort in growing those areas"],
+        ["Say you really need a job/internship","Mention how their mission integrates with what you want to do"],
+        ["Tell your entire personal life story","Give a pitch that touches on what you're doing, how you got there and why that makes you \nperfect for the role"],
+        ["Mention you've always wanted to work for a big company","Point to something that makes the company unique and why that really appeals to you"],
+        ["Mention your past experiences and how great you were then","Do research on the company and mention any issues you would be hired to solve and\nconnect your skills and experiences to that"]
+    ],
+    "ans": [2,2,2,2,2]
+}
