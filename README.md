@@ -99,7 +99,7 @@ This function looks for users in the database using the binary search algorithm.
 
 ![quick-sort](https://user-images.githubusercontent.com/70945471/116002835-cbd46200-a5fb-11eb-9e15-6a279305affb.png)
 
-![quick-sort](https://www.google.com/url?q=https://user-images.githubusercontent.com/70945471/116002887-fd4d2d80-a5fb-11eb-9113-67490c175adb.png&sa=D&source=editors&ust=1619379060081000&usg=AOvVaw0qLod_n5oKpGSi4R2wTNcw)
+![quick-sort](https://user-images.githubusercontent.com/70945471/116002844-d0991600-a5fb-11eb-8b8a-099570fd6d4b.png)
 
 ![quick-sort](https://user-images.githubusercontent.com/70945471/116002887-fd4d2d80-a5fb-11eb-9113-67490c175adb.png)
 
