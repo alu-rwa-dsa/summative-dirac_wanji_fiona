@@ -59,7 +59,68 @@ If the password is correct, but the user isn’t classified as a student, they�
 
 Lastly, the elif and else condition check for other status codes, the elif for code 500, which is a generic error code and the else for any other code, and the numbers they return would let us know there’s an error and we should check it out.
 
+#### Time complexity: O(1) - the login function takes only one user’s information at a time
+#### Space complexity: O(1) - because the information is picked one at a time specifically for the login and it isn't stored afterwards, because it's already in the database
 
+
+### 3. The Sign Up function
+
+![signup-image](https://user-images.githubusercontent.com/70945471/116002679-28834d00-a5fb-11eb-960a-4330f2ca2b94.png)
+
+![signup-image](https://user-images.githubusercontent.com/70945471/116002687-3042f180-a5fb-11eb-8cbd-dfc5c3c5cef3.png)
+
+![signup-image](https://user-images.githubusercontent.com/70945471/116002698-3afd8680-a5fb-11eb-8f4b-12a02512b9e9.png)
+
+The signup function comes in two forms: one for students and one for admin, and it basically asks for the users information and password, then stores it in the database. The user classification specifies whether the user is a student or an administrator.This piece of code is pretty straightforward, but to ensure we can catch any potential error, we added a if else statement to check the status codes, so we can catch any error, for example, if a user tries to sign up with an email that's already being used. We can see the correctness because our code ensures no user has the same email.
+
+#### Time complexity: O(1) - one user is signed up at a time
+#### Space complexity: O(1) - user info is only stored for a short while before its sent to the database
+
+### 3. The Add New Question function
+
+![add-new-question](https://user-images.githubusercontent.com/70945471/116002760-86179980-a5fb-11eb-8e7d-ddd2152eef75.png)
+
+The add_new_question() function takes in a question/ questions, which are stored in a list that is passed into the function. The function then loops through the list and adds each question to the database. This code is correct because of the conditions put in place to check that the questions are added correctly. The code first checks whether the list item is empty or not, and then checks if it is a list item, before proceeding. This ensures that when the list item is looped through, it is a non-empty list. In addition, there is also an inner if else statement that checks for the status code to ensure that the questions are successfully added to the database.
+
+#### Time complexity: O(n) - depending on how many questions are in the list item and have to be looped through
+
+#### Space complexity: O(1) - this is because only one list item is stored with all the questions before they’re sent to the database
+
+### 4. The Binary Search for the Users
+
+![binary-search](https://user-images.githubusercontent.com/70945471/116002796-a8111c00-a5fb-11eb-9d54-56477a62ea14.png)
+
+This function looks for users in the database using the binary search algorithm. This algorithm splits the list in two and searches the portion that the search term is most likely to be in. As it is a recursion formula, we have an initial if statement to ensure that the code only works if the high point of the array is higher than the low point. Moreover, it keeps changing the midpoint as we move to different sections of the split array to ensure we keep dividing the portions in half. With these conditions, the correctness is implemented.
+
+#### Time complexity: O(log n) - this is dependent on how many times the list is split before the search item is found
+#### Space complexity: O(n) - this is because the list of users has to be stored as it is being searched.
+
+### 3. The Quick Sorting Scores function
+
+![quick-sort](https://user-images.githubusercontent.com/70945471/116002835-cbd46200-a5fb-11eb-9e15-6a279305affb.png)
+
+![quick-sort](https://www.google.com/url?q=https://user-images.githubusercontent.com/70945471/116002887-fd4d2d80-a5fb-11eb-9113-67490c175adb.png&sa=D&source=editors&ust=1619379060081000&usg=AOvVaw0qLod_n5oKpGSi4R2wTNcw)
+
+![quick-sort](https://user-images.githubusercontent.com/70945471/116002887-fd4d2d80-a5fb-11eb-9113-67490c175adb.png)
+
+Our quick sort function arranges the user scores in ascending and then returns the sorted list. 
+To check the correctness, we first look at the initial if condition that makes sure that our function, which is a recursive function, stops when the array it is trying to divide contains no element. Next, we look at the if and elif conditions in the for loop. They all use the same pivot index because our quicksort method uses the first element in every list as the pivot point. This is useful as we can keep track of our pivot element at every iteration and every list (low, high and same).
+
+We also print out the sorted list at the end to check for ourselves whether the quicksort function worked.
+
+#### Time complexity: O(log n) - this is because the array is constantly being divided until all the arrays are sorted and can be put together to give the complete sorted list
+
+#### Space complexity: O(n) - this is because we have to store the scores as we sort them
+
+### 6. The Ranking function
+
+![ranking](https://user-images.githubusercontent.com/70945471/116002887-fd4d2d80-a5fb-11eb-9113-67490c175adb.png)
+
+In our ranking function, we use the sorted list from the quick sort function, reverse it and then use the indexes to rank the student’s scores. Firstly, to ensure that the ranking is correct, we reverse the list, so that the highest scores are at the start of the list, which ensures that our rank formula (rank = item_index + 1) gives the correct rank. We set up the rank formula like this because list indexing starts from 0, so after reversing, the highest score would be at position 0, and because rank starts at 1, we add one to the index. Furthermore, we also use an if condition that checks whether the score we’re looking for is in the sorted list, and only proceeds if it is in the list and otherwise, it gives an error. Resultantly, we know that the function is correct, because of all the conditions we’ve put in place.
+
+#### Time complexity: O(1) - this is because the function simply prints a specific element from a given index, so it isn’t a complex or lengthy procedure
+
+#### Space complexity: O(n) - this is because all the scores have to be stored because we ask the user to input their score so we can get their rank
 
 ## Bibliography
 
