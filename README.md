@@ -129,6 +129,12 @@ Our solution’s aim was to make career development an easier process for studen
 
 The purpose of this is to help university students have an easier time in their career development journey, being students ourselves, we understand how time-consuming university studies can be and we designed the game to be a fun, fast way, students can pop in and out of the app when they have time to do so.
 
+## VIDEO
+
+![video-presentation](https://drive.google.com/file/d/1XVPPtR8Aug6aVjf1LMrZ4sSo-8PHGJJC/view?usp=sharing)
+
+[link](https://drive.google.com/file/d/1XVPPtR8Aug6aVjf1LMrZ4sSo-8PHGJJC/view?usp=sharing)
+
 
 ## Bibliography
 
