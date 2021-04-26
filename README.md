@@ -6,6 +6,7 @@
 * [Project Description](#project-description)
 * [Motivation behind the Project](#motivation)
 * [Bibliography/References](#bibliography)
+* [Presentation Slides + Video Demo](#presentation)
 
 
 ## Project Title
@@ -122,8 +123,20 @@ In our ranking function, we use the sorted list from the quick sort function, re
 
 #### Space complexity: O(n) - this is because all the scores have to be stored because we ask the user to input their score so we can get their rank
 
+
+## Solution 
+Our solution’s aim was to make career development an easier process for students to go through as well as commit to. We developed the ALU Career Readiness Application for this specific purpose. The app has different categories of resume preparation, interview preparation, and professional skills development. Login is either as an administrator to monitor students’ progress or add new questions or remove a user, if one logs in as a student, one can play different quiz questions and see how they rank across the players who have played the game.
+
+The purpose of this is to help university students have an easier time in their career development journey, being students ourselves, we understand how time-consuming university studies can be and we designed the game to be a fun, fast way, students can pop in and out of the app when they have time to do so.
+
+
 ## Bibliography
 
 + Review of the Language Learning App "Duolingo" – Specialist Language Courses (2016). Available at: https://specialistlanguagecourses.com/review-language-learning-app-duolingo/  (Accessed: 7 April 2021).
 
+
+## Presentation
+
+Slides Presentation :https://docs.google.com/presentation/d/1OqthQqHElSMhpjWW-6GFTQHb6COdHySAEFW8-ib6iMU/edit?usp=sharing
+Video Link: 
   
